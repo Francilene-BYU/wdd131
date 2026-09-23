@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local</title>
+     <meta name="description" content="Fortaleza é amplamente conhecida como a “Terra da Luz”.">
+
+    <link rel="stylesheet" href="estilos/local.css">
+    <script src="scripts/local.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <h1>Fortaleza</h1>
+        <p>A "Terra da Luz"</p>
+    </header>
+
+    <main>
+        <div class="principal">
+            <picture>
+                <source srcset="imagens/fortaleza-grande.webp" media="(min-width: 1000px)">
+                <source srcset="imagens/fortaleza-medio.webp" media="(min-width: 500px)">
+                <img src="imagens/fortaleza-pequena.webp"
+                    alt="Fortaleza"
+                    width="500"
+                    height="250">
+            </picture>
+        </div>
+
+
+        <section>
+            <h2>Dados de Fortaleza</h2>
+        
+            <p><strong>País:</strong> <span id="pais"></span></p>
+            <p><strong>Estado:</strong> <span id="estado"></span></p>
+            <p><strong>Capital:</strong> <span id="capital"></span></p>
+            <p><strong>População:</strong> <span id="populacao"></span></p>
+            <p><strong>Área:</strong> <span id="area"></span></p>
+        </section>
+
+        <section class="clima">
+            <h2>Clima</h2>
+
+             <img src="imagens/clima.svg" alt="Ensolarado" class="icone-clima">
+
+            <h3>O clima de Fortaleza é tropical.</h3>
+            
+            <p><strong>Temperatura:</strong> <span id="temperatura"></span></p>
+            <p><strong>Condição:</strong> <span id="condicao"></span></p>
+            <p><strong>Velocidade do vento:</strong> <span id="vento"></span></p>
+            <p><strong>Sensação térmica:</strong> <span id="sensacaoTermica"></span></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="anoAtual"></span> Francilene Ferreira | Fortaleza, Ceará</p>
+        <p id="ultimaModificacao"></p>
+    </footer>
+</body>
+</html>
