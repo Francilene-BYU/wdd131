@@ -1,0 +1,18 @@
+@media (min-width: 700px) {
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+      
+    }
+
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
