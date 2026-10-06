@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação de Produto</title>
+
+    <meta name="description" content="Tarefa: Formulário de Avaliação de Produto">
+    <meta name="author" content="Francilene Ferreira">
+
+    <link rel="stylesheet" href="estilos/formulario.css">
+
+    <script src="scripts/formulario.js" defer></script>
+
+
+</head>
+<body>
+
+    <header>
+        <h1>Avaliação de Produto</h1>
+    </header>
+
+<main>
+     <p class="nota-obrigatorio">* Campo obrigatório</p>
+
+    <form method="get" action="avaliacao.html">
+        <fieldset>
+
+            <label for="produto">Nome do Produto*</label>
+
+            <select id="produto" name="produto" required>
+                <option value="" disabled selected>Selecione um Produto...</option>
+            </select>
+        </fieldset>
+
+    <fieldset>
+        <legend>Classificação Geral*</legend>
+
+        <div class="classificacoes">
+
+            <label for="estrela1">
+                <span>★</span>
+                <input type="radio" id="estrela1" name="classificacao" value="1" required>
+            </label>
+
+            <label for="estrela2">
+                <span>★★</span>
+                <input type="radio" id="estrela2" name="classificacao" value="2">
+            </label>
+
+            <label for="estrela3">
+                <span>★★★</span>
+                <input type="radio" id="estrela3" name="classificacao" value="3">
+            </label>
+
+            <label for="estrela4">
+                <span>★★★★</span>
+                <input type="radio" id="estrela4" name="classificacao" value="4">
+            </label>
+
+            <label for="estrela5">
+                <span>★★★★★</span>
+                <input type="radio" id="estrela5" name="classificacao" value="5">
+            </label>
+
+        </div>
+    </fieldset>
+
+        <fieldset>
+
+            <label for="data_instalacao">Data da Instalação*</label>
+
+            <input type="date" id="data_instalacao" name="data_instalacao" required>
+        </fieldset>
+
+        <fieldset>
+        
+            <legend>Quais recursos você achou úteis no produto?</legend>
+            <p class="instrucao">Marque todos que se aplicam.</p>
+           
+            <div class="opcao-checkbox">
+                <input type="checkbox" id="durabilidade" name="durabilidade" value="sim">
+                <label for="durabilidade">Durabilidade</label>
+            </div>
+
+            <div class="opcao-checkbox">
+                <input type="checkbox" id="facilidade_de_uso" name="facilidade_de_uso" value="sim">
+                <label for="facilidade_de_uso">Facilidade de Uso</label>
+            </div>
+
+            <div class="opcao-checkbox">
+                <input type="checkbox" id="desempenho" name="desempenho" value="sim">
+                <label for="desempenho">Desempenho</label>
+            </div>
+
+            <div class="opcao-checkbox">
+                <input type="checkbox" id="design" name="design" value="sim">
+                <label for="design">Design</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <label for="avaliacao_escrita">
+                Avaliação Escrita <span class="opcional">(Opcional)</span>
+            </label>
+            <textarea id="avaliacao_escrita" name="avaliacao_escrita" rows="4" cols="50"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <label for="nome">
+                Seu Nome <span class="opcional">(Opcional)</span>
+            </label>
+            <input type="text" id="nome" name="nome">
+        </fieldset>
+
+        <input type="submit" value="Publicar Avaliação">
+    </form>
+</main>
+    <footer>
+        <p>&copy; <span id="anoAtual"></span> Francilene Ferreira | Fortaleza, Ceará</p>
+        <p id="ultimaModificacao"></p>
+    </footer>
+</body>
+</html>
